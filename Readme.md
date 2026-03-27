@@ -21,7 +21,7 @@ We selected these tools to ensure our site is fast, responsive, and visually eng
 * **About**: We organized this to highlight our professional services and our technical stack (C++, Java, JS) using glowing glassmorphism cards.
 * **Work**: This section is all about showing our coding samples with interactive hover effects and specific language tags.
 * **Team**: We built a responsive grid to introduce all six of us, featuring hover animations and direct links to our profiles.
-* **FAQ**: We implemented a functional accordion system to answer common questions while keeping our layout clean and tidy.
+* **FAQ**: We implemented a functional expansion panel to answer common questions while keeping our layout clean and tidy.
 * **Contact**: We integrated a direct form using Formspree so visitors can reach our team easily without needing a complex backend.
 
 ---
