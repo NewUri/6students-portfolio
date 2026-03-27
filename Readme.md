@@ -42,4 +42,4 @@ We selected these tools to ensure our site is fast, responsive, and visually eng
 * **Raine Macalindol** - Technical Support
 
 ---
-**Pamantasan ng Lungsod ng Muntinlupa** *College of Information Technology* © 2026 6students
+Information Technology © 2026 6students
