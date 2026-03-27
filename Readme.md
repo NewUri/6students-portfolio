@@ -39,7 +39,7 @@ We selected these tools to ensure our site is fast, responsive, and visually eng
 * **Arianne Docuyanan** - Web Designer
 * **Franklin Ramos** - Software Developer
 * **Renzo Hernandez** - Game Developer
-* **Raine Macalindol** - Web Designer
+* **Raine Macalindol** - Technical Support
 
 ---
 **Pamantasan ng Lungsod ng Muntinlupa** *College of Information Technology* © 2026 6students
