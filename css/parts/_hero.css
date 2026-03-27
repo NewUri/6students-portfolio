@@ -1,0 +1,32 @@
+/* This section specifically styles the Hero area, handling the bold typography, 
+   smooth image transitions, and mobile alignment. */
+
+#hero h1 {
+    /* This specifically tightens the heading text to give it a modern, bold look */
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+}
+
+/* This specifically ensures that any square containers (like profile pics) 
+   move with a premium, smooth animation curve */
+.aspect-square {
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#hero img {
+    /* This specifically animates the image when it loads or changes */
+    transition: transform 1s ease, filter 1s ease, opacity 1s ease;
+}
+
+#hero a:hover {
+    /* This specifically adds a shadow when hovering over buttons to make them 'pop' */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* This specifically centers the hero content for tablets and smaller screens */
+@media (max-width: 768px) {
+    #hero {
+        padding-top: 5rem;
+        text-align: center;
+    }
+}

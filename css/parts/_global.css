@@ -1,0 +1,41 @@
+/* This file specifically sets the global rules for the entire site, including 
+   smooth scrolling, font sharpening, and mobile-friendly headings. */
+
+html {
+    /* This specifically makes the page glide smoothly when clicking navigation links */
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #0b0e14; 
+    /* This specifically prevents the page from wiggling left and right on mobile */
+    overflow-x: hidden; 
+    width: 100%;
+    -webkit-tap-highlight-color: transparent; 
+}
+
+/* This section specifically optimizes animations to prevent flickering or lagging */
+.faq-item, .group, .backdrop-blur-md, .solid-block, [data-aos] {
+    will-change: transform, opacity;
+    transform: translateZ(0); 
+    backface-visibility: hidden;
+}
+
+/* This specifically handles the teal glow when a user clicks on a form box */
+input:focus, textarea:focus {
+    box-shadow: 0 0 15px rgba(45, 212, 191, 0.1); 
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(45, 212, 191, 0.4) !important;
+    outline: none;
+}
+
+/* This specifically shrinks large headings so they don't break the layout on small phones */
+@media (max-width: 640px) {
+    h2 {
+        font-size: 2.2rem !important; 
+        line-height: 1.1;
+    }
+}

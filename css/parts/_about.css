@@ -1,0 +1,53 @@
+/* This section specifically styles the 'glass' blocks, handles their hover animations, 
+   and specifically rearranges them into a grid for mobile devices. */
+
+.solid-block {
+    width: 140px; 
+    height: 140px;
+    background: rgba(22, 27, 34, 0.8); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    position: absolute;
+    /* This specifically creates the 'frosted glass' look */
+    backdrop-filter: blur(12px);
+    /* This specifically ensures all movements (hovering/scaling) are smooth */
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.4s ease, 
+                box-shadow 0.4s ease;
+}
+
+/* This specifically handles how the blocks react when a mouse hovers over them */
+@media (hover: hover) {
+    .solid-block:hover {
+        border-color: #2dd4bf;
+        z-index: 30;
+        /* This specifically makes the block grow and lift up slightly */
+        transform: scale(1.08) translateY(-5px); 
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(45, 212, 191, 0.1);
+    }
+}
+
+/* This specifically changes the layout for tablets and phones */
+@media (max-width: 1024px) {
+    #visual-decor {
+        /* This specifically forces the scattered blocks into a neat 2-column grid */
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        height: auto !important;
+    }
+
+    #visual-decor .solid-block {
+        /* This specifically removes absolute positioning so they stay inside the grid */
+        position: relative !important;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    /* This specifically makes the main block take up the full width on mobile */
+    #visual-decor .solid-block.z-10 {
+        grid-column: span 2;
+        order: 5;
+    }
+}

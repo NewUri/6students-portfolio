@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0b0e14">
+    <meta name="description" content="6students - High-performance system optimizations and development.">
+    <title>6students | Portfolio</title>
+
+    <!--These lines connect the design tools that make the site look modern: AOS handles the smooth scroll animations,
+     Tailwind manages the overall layout and colors, and Custom CSS adds our unique starfield and glass effects.--> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            /* Sets Segoe UI as the primary font with fallbacks */
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+        }
+        /* Ensures all headings and buttons use Segoe UI as well */
+        h1, h2, h3, h4, h5, h6, button, input {
+            font-family: "Segoe UI", sans-serif;
+        }
+    </style>
+</head>
+
+<!--This line sets the foundation: it applies our dark background, makes the text white,
+ and hides horizontal scrolling so the page stays perfectly centered on mobile.-->
+<body class="bg-[#0b0e14] text-white antialiased overflow-x-hidden">
+
+    <!--These are empty containers: the first one (tsparticles) is where our moving stars are drawn,
+     and the second (navbar-placeholder) is where our navigation menu is automatically loaded.-->
+    <div id="tsparticles"></div>
+    <div id="navbar-placeholder"></div>
+
+    <!--This is the content area: the main tag ensures all our text and images stay on top of the star background, 
+    while each placeholder is a reserved slot where our different sections (Hero, About, Team, etc.) are automatically loaded.-->
+    <main class="relative z-10 pt-28 lg:pt-4">
+        
+        <div id="hero-placeholder"></div>    
+        <div id="about-placeholder"></div>
+        <div id="work-placeholder"></div>    
+        <div id="team-placeholder"></div>
+        <div id="contacts-placeholder"></div>
+        <div id="faq-placeholder"></div>
+        <div id="footer-placeholder"></div>
+        
+    </main>
+
+    <!-- These lines are the brains of the site: tsparticles specifically creates the moving star background,
+    AOS specifically triggers the smooth animations as you scroll, and main.js specifically acts as the glue
+     that pastes all our separate sections into the empty slots.-->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

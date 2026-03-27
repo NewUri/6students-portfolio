@@ -1,0 +1,27 @@
+ <!--This navbar section is all about helping users move around the site easily,
+  using a fixed menu that stays at the top of the screen even as you scroll.-->
+ <header class="fixed w-full top-0 z-[100] bg-[#0b0e14]/90 backdrop-blur-md border-b border-white/5">
+        <nav class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-teal-400">6students</div>
+            
+            <ul class="hidden md:flex space-x-10 text-sm font-semibold tracking-widest uppercase">
+                <li><a href="#about" class="hover:text-teal-400 transition-colors">About us</a></li>
+                <li><a href="#work" class="hover:text-teal-400 transition-colors">Our work</a></li>
+                <li><a href="#contacts" class="hover:text-teal-400 transition-colors">Contact us</a></li>
+                <li><a href="#faq" class="hover:text-teal-400 transition-colors">FAQ</a></li>
+            </ul>
+
+            <div id="menu-btn" class="md:hidden text-2xl text-teal-400 cursor-pointer p-2 z-[110] relative">
+                ☰
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-[#0b0e14] border-b border-white/10 py-8 px-6 space-y-6 shadow-2xl transition-all duration-300">
+            <ul class="flex flex-col space-y-6 text-sm font-semibold tracking-widest uppercase text-center">
+                <li><a href="#about" class="block hover:text-teal-400">About us</a></li>
+                <li><a href="#work" class="block hover:text-teal-400">Our work</a></li>
+                <li><a href="#contacts" class="block hover:text-teal-400">Contact us</a></li>
+                <li><a href="#faq" class="block hover:text-teal-400">FAQ</a></li>
+            </ul>
+        </div>
+    </header>

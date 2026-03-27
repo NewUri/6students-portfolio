@@ -1,0 +1,35 @@
+/* This file specifically imports all section styles and customizes the scrollbar 
+   to match the teal and dark-mode aesthetic of the website. */
+
+/* These specifically pull in the designs for each separate part of the site */
+@import url('parts/_global.css');
+@import url('parts/_hero.css');
+@import url('parts/_about.css');
+
+/* This specifically changes the look of the scrollbar for Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+/* This specifically sets the dark background color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #0b0e14; 
+}
+
+/* This specifically creates the teal gradient glow and rounded shape for the scroll handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #2dd4bf, #0d9488);
+  border-radius: 10px; 
+  border: 2px solid #0b0e14; 
+}
+
+/* This specifically makes the scrollbar brighter when you hover over it */
+::-webkit-scrollbar-thumb:hover {
+  background: #5eead4;
+}
+
+/* This specifically ensures the custom scrollbar colors work for Firefox users */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2dd4bf #0b0e14;
+}

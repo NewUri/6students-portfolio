@@ -1,0 +1,33 @@
+<!--This contacts section is all about giving visitors a simple way to message us,
+ using a clean form and a direct email link so we can start talking about their projects.-->
+<section id="contacts" class="relative z-10 container mx-auto px-6 py-32 border-t border-white/5 bg-transparent">
+    <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-6">Ready to see what we can do?</h2>
+        <a href="mailto:your@email.com" class="text-teal-400 text-lg font-light hover:underline decoration-teal-400/30 underline-offset-8 transition-all">
+            Get in touch about what you need built.
+        </a>
+    </div>
+
+    <div class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        <form action="https://formspree.io/f/mvzweybq" method="POST" id="contact-form" autocomplete="off" class="space-y-6">
+            <div>
+                <input type="text" name="name" placeholder="Name" required
+                    class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-6 py-4 text-white placeholder-slate-500 focus:outline-none focus:border-teal-400/50 focus:bg-white/[0.05] transition-all">
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Email" required
+                    class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-6 py-4 text-white placeholder-slate-500 focus:outline-none focus:border-teal-400/50 focus:bg-white/[0.05] transition-all">
+            </div>
+            <div>
+                <textarea name="message" rows="6" placeholder="Message" required
+                    class="w-full bg-white/[0.03] border border-white/10 rounded-xl px-6 py-4 text-white placeholder-slate-500 focus:outline-none focus:border-teal-400/50 focus:bg-white/[0.05] transition-all resize-none"></textarea>
+            </div>
+            <div class="flex justify-end">
+                <button type="submit" 
+                    class="bg-white/10 border border-white/20 text-white px-10 py-4 rounded-xl font-bold hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 active:scale-95">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
