@@ -42,4 +42,4 @@ We selected these tools to ensure our site is fast, responsive, and visually eng
 * **Raine Macalindol** - Technical Support
 
 ---
-Information Technology © 2026 6students
+6students © 2026 
